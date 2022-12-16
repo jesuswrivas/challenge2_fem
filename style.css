@@ -8,7 +8,8 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 14px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif
 }
 
 body {
@@ -22,10 +23,11 @@ body {
 
 
 
+
 /*Card container styling*/
 .card {
-    width: 33vw;
-    height: 50vh;
+    width: 44vw;
+    height: 66vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,38 +51,66 @@ body {
     width: 50%;
     height: 100%;
     overflow: hidden;
+
 }
 
 .card-right-product {
     color: hsl(228, 12%, 48%);
-    font-family: Montserrat;
+    padding: 2em;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.25em;
+
 }
 
 .card-right-title {
     color: hsl(212, 21%, 14%);
     font-family: Fraunces;
+    font-size: 2rem;
+    padding: 0 2rem;
+
 }
 
 .card-right-description {
     color: hsl(228, 12%, 48%);
-    font-family: Montserrat;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+
+
 
 }
 
 .card-right-price {
-    color: hsl(158, 36%, 37%);
-    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    gap: 2em;
 }
 
 
-.card-right-price_discount {
+.card-right-price-discount {
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.card-right-price-full {
     color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    text-decoration-color: hsl(228, 12%, 48%);
+    font-size: 1rem;
 }
 
 .card-right-buy {
     display: block;
     background-color: hsl(158, 36%, 37%);
     color: white;
+    margin: auto;
+    padding: 1em 4em;
+    border-radius: 0.75em;
+
 }
 
 
@@ -88,7 +118,7 @@ body {
 
 
 /*Card container styling when reducing sizing*/
-@media (max-width:375px) {
+@media (max-width:800px) {
     .card {
         width: 90vw;
         height: 85vh;
