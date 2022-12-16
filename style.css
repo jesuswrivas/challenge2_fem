@@ -88,7 +88,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 1rem;
+    padding: 1rem 2rem;
     gap: 2em;
 
 }
