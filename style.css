@@ -37,7 +37,7 @@ body {
 .card-left {
     width: 50%;
     height: 100%;
-    background-image: url(/home/jesus/front-end-mentor/Challenges/product-preview-card-component-main-TESTS/product-preview-card-component-main/images/image-product-desktop.jpg);
+    background-image: url(images/image-product-desktop.jpg);
     background-size: cover;
     overflow: hidden;
     border-radius: 1em 0 0 1em;
@@ -118,6 +118,11 @@ body {
 
 }
 
+.card-right-button:hover {
+    background-color: hsl(158, 37%, 21%);
+    cursor: pointer;
+}
+
 
 
 
@@ -135,7 +140,7 @@ body {
     .card-left {
         width: 100%;
         height: 40%;
-        background-image: url(/home/jesus/front-end-mentor/Challenges/product-preview-card-component-main-TESTS/product-preview-card-component-main/images/image-product-mobile.jpg);
+        background-image: url(images/image-product-mobile.jpg);
         background-size: cover;
     }
 
