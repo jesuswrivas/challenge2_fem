@@ -24,7 +24,7 @@ body {
 
 /*Card container styling*/
 .card {
-    width: 50vw;
+    width: 33vw;
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -37,20 +37,9 @@ body {
 .card-left {
     width: 50%;
     height: 100%;
-
-}
-
-/* Image - left card styling */
-.card-left-image_desktop {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-
-}
-
-/* This image will only be shown when the width is under 700px*/
-.card-left-image_mobile {
-    display: none;
+    background-image: url(/home/jesus/front-end-mentor/Challenges/product-preview-card-component-main-TESTS/product-preview-card-component-main/images/image-product-desktop.jpg);
+    background-size: cover;
+    overflow: hidden;
 }
 
 
@@ -59,15 +48,47 @@ body {
 .card-right {
     width: 50%;
     height: 100%;
+    overflow: hidden;
+}
+
+.card-right-product {
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat;
+}
+
+.card-right-title {
+    color: hsl(212, 21%, 14%);
+    font-family: Fraunces;
+}
+
+.card-right-description {
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat;
+
+}
+
+.card-right-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+}
+
+
+.card-right-price_discount {
+    color: hsl(228, 12%, 48%);
+}
+
+.card-right-buy {
+    display: block;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
 }
 
 
 
 
 
-
-/*Card container styling when reducing size*/
-@media (max-width:700px) {
+/*Card container styling when reducing sizing*/
+@media (max-width:375px) {
     .card {
         width: 90vw;
         height: 85vh;
@@ -80,24 +101,12 @@ body {
     .card-left {
         width: 100%;
         height: 40%;
+        background-image: url(/home/jesus/front-end-mentor/Challenges/product-preview-card-component-main-TESTS/product-preview-card-component-main/images/image-product-mobile.jpg);
+        background-size: cover;
     }
 
     .card-right {
         width: 100%;
         height: 60%;
     }
-
-    .card-left-image_mobile {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
-
-    /*Desktop image version will be hidden*/
-    .card-left-image_desktop {
-        display: none;
-    }
-
-
 }
